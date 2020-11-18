@@ -1,0 +1,28 @@
+<div *ngIf="departamentos.length > 0">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Nombre</th>
+                <th>Localidad</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dept of departamentos">
+                <td>{{dept.numero}}</td>
+                <td>{{dept.nombre}}</td>
+                <td>{{dept.localidad}}</td>
+                <td>
+                    <a class="btn btn-danger" [routerLink]="['/eliminar', dept.numero]">Eliminar</a>
+                </td>
+                <td>
+                    <a class="btn btn-info" [routerLink]="['/update', dept.numero]">
+                        Modificar
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

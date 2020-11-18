@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crudangular"
+    }
+  },
+  "defaultProject": "crudangular",
+  "cli": {
+    "analytics": "65140054-64a3-46af-8c1f-26344eee71d8"
+  }
 }
